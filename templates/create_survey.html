@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать опрос</title>
+</head>
+<body>
+    <h1>Создать опрос</h1>
+    <form id="create-survey-form" method="post" action="/surveys/create">
+        <label for="title-input">Title:</label>
+        <input type="text" id="title-input" name="title"><br><br>
+        <label for="description-input">Description:</label>
+        <textarea id="description-input" name="description"></textarea><br><br>
+        <button type="submit">Создать опрос</button>
+    </form>
+
+</body>
+</html>

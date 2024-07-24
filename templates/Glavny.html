@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн опрос</title>
+</head>
+<body>
+    <h1>Онлайн опрос</h1>
+    <form id="search-form" method="get" action="/surveys/search">
+        <label for="title-input">Search:</label>
+        <input type="text" id="title-input" name="title"><br><br>
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+    {% for survey in surveys %}
+        <li>{{ survey.title }} ({{ survey.description }})</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
